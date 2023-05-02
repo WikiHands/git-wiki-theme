@@ -18,7 +18,7 @@
     {% include git-wiki/sections/head/scripts.html %}
     {% include git-wiki/sections/head/styles.html %}
 
-    <link rel="stylesheet" href="{{ '/assets/css/bootswatch.css' | relative_url }}"/>
+    <link rel="stylesheet" href="{{ '/assets/css/bootswatch.css?v=' | append: site.github.build_revision | relative_url }}"/>
 
     {% if site.inc_after_head %}
     {% include {{ site.inc_after_head }} %}
